@@ -2,8 +2,9 @@ import requests
 import json
 import time
 from datetime import datetime, timezone
+from getpass import getpass
 
-sessionid = input("Instagram sessionid çerezini girin: ")
+sessionid = getpass("Instagram sessionid çerezini girin: ")
 shortcode = input("Instagram gönderi kısa kodunu girin (örn: DD7srGYoj2F): ")
 
 print("\nSeçenekler:")
